@@ -9,7 +9,7 @@ import (
 
 func init() {
 	firewallDeleteCmd.Flags().BoolP("force", "f", false, "Remove security group without prompting for confirmation and delete all rules inside")
-	firewallDeleteCmd.Flags().BoolP("all", "", false, "Remove all security group without default")
+	firewallDeleteCmd.Flags().BoolP("all", "", false, "Remove all Security Groups except default")
 	firewallCmd.AddCommand(firewallDeleteCmd)
 }
 
